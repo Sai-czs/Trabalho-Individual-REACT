@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 import './Home.css';
 
 const musicas = [
-  { nome: 'Música 1', arquivo: '/musica1.mp3' },
-  { nome: 'Música 2', arquivo: '/musica2.mp3' },
-  { nome: 'Música 3', arquivo: '/musica3.mp3' }
+  { nome: 'Nikes', arquivo: '/Nikes.mp3' },
+  { nome: 'ivy', arquivo: '/Ivy.mp3' },
+  { nome: 'Self Control', arquivo: '/Self Control.mp3' },
+  { nome: 'Seigfried', arquivo: '/Seigfried.mp3' },
+  { nome: 'White Ferrari', arquivo: '/White Ferrari.mp3' }
 ];
 
 export function Home() {
@@ -17,18 +19,29 @@ export function Home() {
   };
 
   return (
+  <>
+    <div className="player-container">
+  <div style={{ display: 'flex', alignItems: 'center', gap: 24, width: '100%' }}>
+    <img
+      src="/assets/Blond.jpeg"
+      className="vitrola-img"
+      style={{ margin: 0, width: 100, height: 100, position: 'static' }}
+    />
+    <div style={{ flex: 1, textAlign: 'center' }}>
+      <strong>Tocando agora:</strong> {musicas[musicaAtual].nome}
+      <audio
+        ref={audioRef}
+        src={musicas[musicaAtual].arquivo}
+        controls
+        autoPlay
+        onEnded={tocarProxima}
+        style={{ display: 'block', margin: '18px auto 0 auto', width: '90%' }}
+      />
+    </div>
+  </div>
+</div>
+
     <div className="home-container">
-      <div style={{ marginBottom: 24 }}>
-        <strong>Tocando agora:</strong> {musicas[musicaAtual].nome}
-        <audio
-          ref={audioRef}
-          src={musicas[musicaAtual].arquivo}
-          controls
-          autoPlay
-          onEnded={tocarProxima}
-          style={{ display: 'block', margin: '12px auto 0 auto', width: '100%' }}
-        />
-      </div>
       <h1>Trabalho Indivual - React</h1><br/>
       <h2>Escolha uma questão abaixo:</h2>
       <div className="links-container">
@@ -43,5 +56,6 @@ export function Home() {
         </Link>
       </div>
     </div>
+  </>
   );
 }
