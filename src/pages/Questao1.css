@@ -1,0 +1,37 @@
+.tema-container {
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, color 0.3s;
+  
+}
+.tema-container.light {
+  background-color: white;
+  color: #333;
+}
+
+.tema-container.dark {
+  background-color: #333;
+  color: white;
+}
+
+
+.tema-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.tema-container.light .tema-button {
+  background: #ddd;
+  color: #333;
+}
+.tema-container.dark .tema-button {
+  background: #555;
+  color: white;
+}

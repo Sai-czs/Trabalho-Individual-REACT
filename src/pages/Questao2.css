@@ -1,0 +1,28 @@
+/* Container principal */
+.mensagem-container {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilo do parágrafo */
+.mensagem-texto {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+/* Estilo do botão */
+.mensagem-botao {
+  padding: 10px 20px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Efeito hover */
+.mensagem-botao:hover {
+  background: #218838;
+  transition: background 0.2s;
+}

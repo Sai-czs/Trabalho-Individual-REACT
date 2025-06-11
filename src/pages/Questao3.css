@@ -1,0 +1,52 @@
+/* Container principal */
+.tarefas-container {
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Container do input + botão */
+.tarefas-input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Estilo do input */
+.tarefas-input {
+  padding: 10px;
+  flex: 1;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Estilo do botão */
+.tarefas-botao {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Efeito hover */
+.tarefas-botao:hover {
+  background: #0056b3;
+  transition: background 0.2s;
+}
+
+/* Estilo da lista */
+.tarefas-lista {
+  list-style: none;
+  padding: 0;
+}
+
+/* Estilo dos itens da lista */
+.tarefas-item {
+  padding: 10px;
+  background: #f8f9fa;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
