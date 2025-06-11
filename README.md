@@ -1,12 +1,23 @@
-# React + Vite
+Este projeto foi desenvolvido para um trabalho individual para praticar conceitos fundamentais de React, utilizando o Vite como ferramenta de build.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React: Biblioteca para construção de interfaces de usuário.
+Vite: Ferramenta de build e desenvolvimento rápido.
+React Router DOM: Navegação entre páginas.
+ESLint: Padronização de código.
+CSS: Estilização dos componentes.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Funcionalidades Implementadas:
 
-## Expanding the ESLint configuration
+Home: Tela inicial com navegação para as questões.
+Questão 1: Alternância entre tema claro e escuro usando React e CSS.
+Questão 2: Exibição de mensagem de boas-vindas com alteração dinâmica de texto.
+Questão 3: Lista de tarefas com funcionalidades de adicionar, editar e excluir tarefas.
+Player do Spotify: Componente fixo exibindo um player do Spotify em todas as páginas.
+Navegação entre páginas: Utilizando React Router.
+Estilização personalizada: CSS modular para cada página.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Observações:
+
+- O código está organizado (pelo menos ao meu ver) para facilitar a compreensão.
+- Releve qualquer erro ortográfico, meu teclado está morrendo.
