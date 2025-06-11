@@ -7,31 +7,82 @@
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s, color 0.3s;
-  
 }
 .tema-container.light {
   background-color: white;
-  color: #333;
+  color: #0f0f0f;
 }
-
 .tema-container.dark {
-  background-color: #333;
+  background-color: #0f0f0f;
   color: white;
 }
-
-
-.tema-button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-top: 20px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
   cursor: pointer;
-  font-weight: bold;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px; width: 26px;
+  left: 4px; bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: #1b1b1b;
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.tema-button {
+  display: block;
+  width: 100px;
+  height: 50px;
+  border-radius: 20px;
+  background: var(--primary-label);
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
 }
 .tema-container.light .tema-button {
-  background: #ddd;
-  color: #333;
+  background: #181818;
+  color: white;
 }
 .tema-container.dark .tema-button {
-  background: #555;
-  color: white;
+  background: white;
+  color: #181818;
+}
+.navegar-botao {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.397); 
+  backdrop-filter: blur(7px);
+  padding: 17px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  border: 0.1px solid rgba(0, 0, 0, 0.493); 
+  box-shadow: 0 7px 32px rgba(0, 0, 0, 0.3); 
+  transition: all 0.2s;
 }

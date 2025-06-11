@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Questao3.css'; 
 
 export function Questao3() {
@@ -6,6 +7,7 @@ export function Questao3() {
   const [novaTarefa, setNovaTarefa] = useState('');
   const [editando, setEditando] = useState(null);
   const [tarefaEditada, setTarefaEditada] = useState('');
+  const navigate = useNavigate();
 
   const adicionarTarefa = () => {
     if (novaTarefa.trim() !== '') {
@@ -74,6 +76,9 @@ export function Questao3() {
           </li>
         ))}
       </ul>
+      <button onClick={() => navigate('/')} className="navegar-botao">
+        Voltar para Home
+      </button>
     </div>
   );
 }

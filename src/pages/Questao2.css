@@ -1,28 +1,66 @@
-/* Container principal */
+body{
+  display: grid;
+  place-items: center;
+  margin: 0;
+  height: 100vh;
+  background-image: url("../assets/blackwhite.gif");
+  background-size: contain;
+  background-position: center;
+  color: rgb(255, 255, 255);
+  font-family: Arial, sans-serif;
+}
+*{
+  box-sizing: border-box;
+}
+.background{
+  position: fixed;
+  z-index: -1;
+  top: 70%;
+  left: 50%;
+  right: 0;
+  bottom: -70vh;
+  translate: -50% -50%;
+  width: 150vh;
+}
 .mensagem-container {
-  padding: 20px;
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.082); 
+  backdrop-filter: blur(3px);
+  border-radius: 40px;
+  padding: 37px 37px 58px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  box-shadow: 0 7px 32px rgba(0,0,0,0.7);
+}
+.mensagem-container {
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
-/* Estilo do parágrafo */
 .mensagem-texto {
   font-size: 24px;
   margin: 20px 0;
 }
 
-/* Estilo do botão */
 .mensagem-botao {
-  padding: 10px 20px;
-  background: #28a745;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-/* Efeito hover */
-.mensagem-botao:hover {
-  background: #218838;
-  transition: background 0.2s;
+  position: relative;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  background: rgba(255, 255, 255, 0.349); 
+  backdrop-filter: blur(7px);
+  padding: 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  border: 0.1px solid rgba(0, 0, 0, 0.493); 
+  box-shadow: 0 7px 32px rgba(0, 0, 0, 0.7); 
+  transition: all 0.2s;
 }

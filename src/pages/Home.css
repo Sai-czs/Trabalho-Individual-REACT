@@ -12,10 +12,6 @@ body{
 *{
   box-sizing: border-box;
 }
-:root{
-  --color-primary:var(--color-primary)
-  --color-muted: #f0f0f0;
-}
 .background{
   position: fixed;
   z-index: -1;
@@ -44,64 +40,24 @@ body{
 .links-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 37px;
   max-width: 300px;
   margin: 0 auto;
 }
 .link-button {
   position: relative;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 17px;
-  background: rgba(68, 53, 53, 0.295); 
+  background: rgba(255, 255, 255, 0.349); 
   backdrop-filter: blur(7px);
   padding: 15px;
   border-radius: 8px;
   text-decoration: none;
   display: inline-block;
-  border: 0.1px solid rgb(66, 66, 66); 
+  border: 0.1px solid rgba(0, 0, 0, 0.493); 
   box-shadow: 0 7px 32px rgba(0, 0, 0, 0.7); 
   transition: all 0.2s;
 }
-.link-button:hover {
-  opacity: 0.9;
-  transform: scale(1.02);
-  transition: all 0.2s;
-}
-.vitrola-img {
-  position: absolute;
-  background-image: url("../assets/Blond.jpeg");
-  background-size: cover;
-  background-position: center;
-  top: -50px;
-  left: 50%;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 1px solid #fff;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
-  animation: girar 7s linear infinite;
-  object-fit: cover;
-  margin-right: 16px;
-  position: absolute;
-}
-
-.player-container {
-  position: relative;
-  z-index: 3;
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(3px);
-  border-radius: 32px;
-  padding: 37px 20px 20px;
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.5);
-  margin-bottom: 32px;
-}
-
 @keyframes girar {
   100% {
     transform: rotate(360deg);
